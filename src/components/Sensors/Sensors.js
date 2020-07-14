@@ -7,22 +7,18 @@ import './Sensors.css';
 // This used to look so pretty! What's the problem? Did you lose your sense of style?
 
 class Sensors extends Component {
-    render() {
-        return ( <
-            div className = 'container' >
-            <
-            h2 > Sensors < /h2> <
-            div className = 'sensor-container' >
-            <
-            GyroscopicSensor / > { /* Oooops! Did someone steal your ion drive? Ion so sorry! */ } <
-            IonDriveSensor / >
-            <
-            FlameSensor / >
-            <
-            /div> < /
-            div >
-        );
-    }
+  render() {
+    return (
+      <div className="container">
+        <h2> Sensors </h2>{' '}
+        <div className="sensor-container">
+          <GyroscopicSensor /> {/* Oooops! Did someone steal your ion drive? Ion so sorry! */}{' '}
+          <IonDriveSensor />
+          <FlameSensor />
+        </div>{' '}
+      </div>
+    );
+  }
 }
 
 export default Sensors;
